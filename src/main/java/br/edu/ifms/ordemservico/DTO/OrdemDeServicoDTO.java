@@ -27,9 +27,7 @@ public class OrdemDeServicoDTO implements Serializable {
 	private Date dataCadastro;
 	private Status status;
 	private Prioridade prioridade;
-	@NotBlank(message = "O campo descrição da solução é obrigatório")
 	private String descricaoSolucao;
-	@NotBlank(message = "O campo servidor é obrigatório")
 	private Servidor servidor;
 
 	public OrdemDeServicoDTO() {
