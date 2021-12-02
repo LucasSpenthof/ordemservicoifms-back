@@ -47,7 +47,7 @@ public class OrdemDeServicoResource {
 	}
 	
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<OrdemDeServicoDTO> update(@PathVariable Long id, @Valid @RequestBody OrdemDeServicoDTO dto) {  // @Valid tem que estar na frente o @RequestBody
+	public ResponseEntity<OrdemDeServicoDTO> update(@PathVariable Long id, @Valid @RequestBody OrdemDeServicoDTO dto) {
 		dto = service.update(id, dto);
 		return ResponseEntity.ok().body(dto);
 	}
